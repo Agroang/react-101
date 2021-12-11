@@ -30,8 +30,10 @@ ReactDOM.render(
 // - Give it a class name of "header"
 // - append it as a child of the div#root
 
-let h1 = document.createElement("h1");
+const h1 = document.createElement("h1");
 h1.textContent = 'This is a header'
 h1.classList.add('header')
-let target = document.getElementById('root')
+// another simpler way could be: h1.className = 'header'
+const target = document.getElementById('root')
 target.appendChild(h1)
+// last step could also be done in 1 line: document.getElementbyId('root').appendChild(h1)
