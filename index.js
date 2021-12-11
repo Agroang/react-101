@@ -37,3 +37,51 @@ h1.classList.add('header')
 const target = document.getElementById('root')
 target.appendChild(h1)
 // last step could also be done in 1 line: document.getElementbyId('root').appendChild(h1)
+
+// const element = <h1 className="header">This is JSX</h1>
+// console.log(element)
+// ReactDOM.render(element, document.getElementById("root"))
+// The element that JSX creates is actually a JS object, and inside the props (properties) we
+// can see className (class) and the children (actual content, a piece of string for example)
+
+// You can also only render 1 parent element, so <h1></h1><p></p> won't work, but you can make
+// it work by having only 1 parent element, so wrap those two inside a div and as you will have
+// only 1 div (parent element) you won't have problems
+
+ReactDOM.render(
+  <div>
+    <h5>h5 here inside a div</h5>
+    <h6> h6 here inside same div</h6>
+  </div>,
+  document.getElementById("parent-unique")
+)
+
+// If you have too many html elements that you want to add you can also save those in a variable
+// const page = (
+//   <div>
+//     <h1 className="header">This is JSX</h1>
+//     <p>This is a paragraph</p>
+//   </div>
+// )
+// ReactDOM.render(
+//   page,
+//   document.getElementById("root")
+// )
+
+
+// Another example:
+// const navbar = (
+//   <nav>
+//     <h1>My Website</h1>
+//     <ul>
+//       <li>Pricing</li>
+//       <li>About</li>
+//       <li>Contact</li>
+//     </ul>
+//   </nav>
+// )
+
+// ReactDOM.render(
+//   navbar,
+//   document.getElementById('root')
+// )
