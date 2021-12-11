@@ -7,7 +7,7 @@ ReactDOM.render(
   document.getElementById("ul-testing")
 )
 
-// More example on how to create those partials (components?) and how to render
+// More example on how to create a components and how to render it
 // Note that is not "class" but "className" as this is JSX so it looks a little bit different
 function MainContent() {
   return (
