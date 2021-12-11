@@ -6,3 +6,18 @@ ReactDOM.render(
   <ul><li>1</li><li>2</li></ul>,
   document.getElementById("ul-testing")
 )
+
+// More example on how to create those partials (components?) and how to render
+// Note that is not "class" but "className" as this is JSX so it looks a little bit different
+function MainContent() {
+  return (
+    <h1 className="btn btn-primary">Nice fat h1 with bootstrap</h1>
+  )
+}
+
+ReactDOM.render(
+  <div>
+    <MainContent />
+  </div>,
+  document.getElementById("root")
+)
