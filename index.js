@@ -134,3 +134,52 @@ function TemporaryName() {
 }
 
 ReactDOM.render(<TemporaryName />, document.getElementById("another-div"))
+
+// How to render multiple components:
+// **Bad example afterwards as well, this is the correct way**
+// ReactDOM.render(
+//   <div>
+//     <HeaderPage />
+//     <Page />
+//     <FooterPage />
+//   </div>,
+//   document.getElementById("root"))
+
+// Or it could be in the same component:
+// ** The above version is better!! **
+// function Page() {
+//   return (
+//     <div>
+//       <header>
+//         <nav>
+//           <img src="./react-logo.png" width="40px" />
+//         </nav>
+//       </header>
+//       <h1>Reasons I'm excited to learn React</h1>
+//       <ol>
+//         <li>It's a popular library, so I'll be
+//           able to fit in with the cool kids!</li>
+//         <li>I'm more likely to get a job as a developer
+//           if I know React</li>
+//       </ol>
+//       <footer>
+//         <small>© 2021 Ziroll development. All rights reserved.</small>
+//       </footer>
+//     </div>
+//   )
+// }
+
+// You can use <> </> instead of having to put a <div></div>
+// when you are in need of a parent element
+
+// It is also common to do parent/child component like bellow:
+
+// function Page() {
+//   return (
+//     <div>
+//       <Header />
+//       <MainContent />
+//       <Footer />
+//     </div>
+//   )
+// }
