@@ -85,3 +85,29 @@ ReactDOM.render(
 //   navbar,
 //   document.getElementById('root')
 // )
+
+// The job of ReactDOM.render is to take react element (js objects) and make those
+// into real dom elements
+
+// Normally, instead of the CDNs that we have in the index, we would use actual dependencies in our package.son
+// If that is the case, the we would need to import the modules as bellow:
+// import React from "react"
+// import ReactDOM from "react-dom"
+
+// A basic use of React:
+// const target = document.getElementById("root")
+// const page = (
+//   <div>
+//     <img src="./react-logo.png" width="40px" />
+//     <h1>Fun facts about React</h1>
+//     <ul>
+//       <li>Was first released in 2013</li>
+//       <li>Was originally created by Jordan Walke</li>
+//       <li>Has well over 100k stars in Github</li>
+//       <li>Is maintained by Facebook</li>
+//       <li>Powers thousands of enterprise apps, including mobile apps</li>
+//     </ul>
+//   </div>
+// )
+
+// ReactDOM.render(page, target)
