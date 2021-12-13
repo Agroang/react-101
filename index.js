@@ -243,3 +243,5 @@ ReactDOM.render(<TemporaryName />, document.getElementById("another-div"))
 // }
 
 // ReactDOM.render(<App />, document.getElementById("root"))
+
+// From now on we will be working on a Create React App, so go to React-102
