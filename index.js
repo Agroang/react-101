@@ -202,3 +202,44 @@ ReactDOM.render(<TemporaryName />, document.getElementById("another-div"))
 //     </header>
 //   )
 // }
+
+// As the js file will get bigger and bigger, ideally you will make partials
+// with the name of the component like "Header.js". Remember to import react
+// at the beginning on each partial. You will also need to export the function
+// (component) to be able to use it. You can do it at the end as a export default
+// if it's the only function:
+
+// export default Header
+// or even write it next to the function declaration as:
+// export default function Header() {
+//   return (
+//     <header>
+//       <nav className="nav">
+//         <img src="./react-logo.png" className="nav-logo" />
+//         <ul className="nav-items">
+//           <li>Pricing</li>
+//           <li>About</li>
+//           <li>Contact</li>
+//         </ul>
+//       </nav>
+//     </header>
+//   )
+// }
+// Then on the js file (main) you need to also import the component
+// import Header from "./Header"
+// The name has to be the same as the file name to work
+
+// The convention is to have a main App component and you put the stuff
+// inside that one:
+
+// function App() {
+//   return (
+//     <div>
+//       <Header />
+//       <MainContent />
+//       <Footer />
+//     </div>
+//   )
+// }
+
+// ReactDOM.render(<App />, document.getElementById("root"))
