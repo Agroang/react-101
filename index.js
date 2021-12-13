@@ -183,3 +183,22 @@ ReactDOM.render(<TemporaryName />, document.getElementById("another-div"))
 //     </div>
 //   )
 // }
+
+// Styling in React is as simple as to add the needed class to it, the only
+// difference is that we need to use className (that comes from .className)
+// instead of class
+
+// function Header() {
+//   return (
+//     <header>
+//       <nav>
+//         <img src="./react-logo.png" width="40px" />
+//         <ul className="nav-items">
+//           <li>Pricing</li>
+//           <li>About</li>
+//           <li>Contact</li>
+//         </ul>
+//       </nav>
+//     </header>
+//   )
+// }
